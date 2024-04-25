@@ -4,7 +4,9 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def some_function(argument_1: int, argument_2: float, some_text_data: str) -> list:
+def some_function(argument_1: int,
+                  argument_2: float,
+                  some_text_data: str) -> list:
     """
     Perform calculations based on the inputs and log the process.
 
@@ -23,6 +25,7 @@ def some_function(argument_1: int, argument_2: float, some_text_data: str) -> li
     Raises:
         Exception: Captures and logs any exceptions that occur during the function's execution.
     """
+
     function_name = inspect.currentframe().f_code.co_name
     log_message = f"Running function -> {function_name}"
     logger.info(log_message)

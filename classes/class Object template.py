@@ -10,7 +10,10 @@ class MyObject:
     """
     count = 0  # Initialize a class attribute to track the count of objects.
 
-    def __init__(self, name: str, number: int, logical_operator: bool, other_object: object):
+    def __init__(self, name: str,
+                 number: int,
+                 logical_operator: bool,
+                 other_object: object):
         """
         Initialize the MyObject with specified attributes.
         Parameters:
@@ -66,7 +69,9 @@ class MyObject:
         logger.info(f"Updated object number to {new_number} for {self.name}")
 
     @staticmethod
-    def some_action(argument_1: int, argument_2: float, some_text_data: str) -> list:
+    def some_action(argument_1: int,
+                    argument_2: float,
+                    some_text_data: str) -> list:
         """
         Perform calculations based on the inputs and log the process.
 
